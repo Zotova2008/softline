@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "dataMap": "moscow",
+    "city": [
+      {
+        "nameCity": "Москва",
+        "positionX": 10.4,
+        "positionY": 37,
+        "size": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "dataMap": "center",
+    "city": [
+      {
+        "nameCity": "Ярославль",
+        "positionX": 13,
+        "positionY": 32.5,
+        "size": 3
+      },
+      {
+        "nameCity": "Воронеж",
+        "positionX": 6.5,
+        "positionY": 40.8,
+        "size": 3
+      },
+      {
+        "nameCity": "Белгород",
+        "positionX": 6.2,
+        "positionY": 45.5,
+        "size": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "dataMap": "northwest",
+    "city": [
+      {
+        "nameCity": "Санкт-Петербург",
+        "positionX": 8.4,
+        "positionY": 22.2,
+        "size": 1
+      },
+      {
+        "nameCity": "Калининград",
+        "positionX": 1,
+        "positionY": 20.6,
+        "size": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "dataMap": "south",
+    "city": [
+      {
+        "nameCity": "Ростов-на-Дону",
+        "positionX": 3.6,
+        "positionY": 52.9,
+        "size": 2
+      },
+      {
+        "nameCity": "Волгоград",
+        "positionX": 7.4,
+        "positionY": 59.4,
+        "size": 3
+      },
+      {
+        "nameCity": "Краснодар",
+        "positionX": 2,
+        "positionY": 62.5,
+        "size": 2
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "dataMap": "volga",
+    "city": [
+      {
+        "nameCity": "Н. Новгород",
+        "positionX": 14,
+        "positionY": 43,
+        "size": 3
+      },
+      {
+        "nameCity": "Самара",
+        "positionX": 14.6,
+        "positionY": 50.4,
+        "size": 3
+      },
+      {
+        "nameCity": "Казань",
+        "positionX": 19.8,
+        "positionY": 49.5,
+        "size": 3
+      },
+      {
+        "nameCity": "Уфа",
+        "positionX": 20.8,
+        "positionY": 55.5,
+        "size": 3
+      },
+      {
+        "nameCity": "Оренбург",
+        "positionX": 17,
+        "positionY": 60.4,
+        "size": 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "dataMap": "ural",
+    "city": [
+      {
+        "nameCity": "Ижевск",
+        "positionX": 26.2,
+        "positionY": 48,
+        "size": 3
+      },
+      {
+        "nameCity": "Пермь",
+        "positionX": 30.7,
+        "positionY": 49.4,
+        "size": 2
+      },
+      {
+        "nameCity": "Сургут",
+        "positionX": 35.5,
+        "positionY": 51,
+        "size": 3
+      },
+      {
+        "nameCity": "Екатеринбург",
+        "positionX": 24.6,
+        "positionY": 54.3,
+        "size": 3
+      },
+      {
+        "nameCity": "Челябинск",
+        "positionX": 24.5,
+        "positionY": 60,
+        "size": 2
+      },
+      {
+        "nameCity": "Тюмень",
+        "positionX": 33.1,
+        "positionY": 60,
+        "size": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dataMap": "siberia",
+    "city": [
+      {
+        "nameCity": "Омск",
+        "positionX": 37.7,
+        "positionY": 78.3,
+        "size": 2
+      },
+      {
+        "nameCity": "Новосибирск",
+        "positionX": 40.6,
+        "positionY": 75.2,
+        "size": 3
+      },
+      {
+        "nameCity": "Томск",
+        "positionX": 47.6,
+        "positionY": 73,
+        "size": 2
+      },
+      {
+        "nameCity": "Красноярск",
+        "positionX": 51.3,
+        "positionY": 75.5,
+        "size": 3
+      },
+      {
+        "nameCity": "Иркутск",
+        "positionX": 56.5,
+        "positionY": 80.5,
+        "size": 2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "dataMap": "east",
+    "city": [
+      {
+        "nameCity": "Хабаровск",
+        "positionX": 80,
+        "positionY": 79.5,
+        "size": 1
+      },
+      {
+        "nameCity": "Владивосток",
+        "positionX": 78.5,
+        "positionY": 95,
+        "size": 1
+      }
+    ]
+  }
+]

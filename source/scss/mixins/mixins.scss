@@ -1,0 +1,19 @@
+@mixin position($top: 50%, $left: 50%, $topTrans: -50%, $leftTrans: -50%) {
+  top: $top;
+  left: $left;
+
+  transform: translate($leftTrans, $topTrans);
+}
+
+@mixin scrollbar($color-thumb) {
+  &::-webkit-scrollbar {
+    width: 4px;
+
+    background-color: $color-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-thumb;
+    border-radius: 4px;
+  }
+}

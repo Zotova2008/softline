@@ -1,0 +1,23 @@
+.business {
+  padding: 100px 0;
+
+  @include media-max($vp-768) {
+    padding: 50px 0;
+  }
+}
+
+.business__container {
+  @include media-min(1250px) {
+    padding: 0;
+  }
+}
+
+.business__title {
+  margin-bottom: 55px;
+
+  text-align: center;
+
+  @include media-max($vp-768) {
+    margin-bottom: 15px;
+  }
+}

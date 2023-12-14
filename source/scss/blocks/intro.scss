@@ -1,0 +1,25 @@
+.intro {
+  @include adaptive-bg("../../img/intro-bg", "jpg");
+
+  padding: 158px 0;
+
+  background-color: #a5c9e9;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media-max($vp-768) {
+    padding: 40px 0 95px;
+  }
+}
+
+.intro__content {
+  max-width: 800px;
+}
+
+.intro__title {
+  margin-bottom: 60px;
+
+  @include media-max($vp-768) {
+    margin-bottom: 20px;
+  }
+}

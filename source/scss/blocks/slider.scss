@@ -1,0 +1,118 @@
+.slider {
+  padding: 103px 0 70px;
+
+  @include media-max($vp-768) {
+    padding: 50px 0 20px;
+  }
+}
+
+.slider__container {
+  position: relative;
+}
+
+.slider__title {
+  margin: 0 150px 24px 0;
+
+  @include media-max($vp-768) {
+    margin: 0 0 -14px;
+  }
+}
+
+.slider__swiper {
+  padding: 28px 0;
+}
+
+.slider__controls {
+  @include media-max($vp-768) {
+    display: none;
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  top: 0;
+  right: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: end;
+
+  cursor: pointer;
+}
+
+.slider__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+
+  color: $color-link-hover;
+
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: color $trans-default, background-color $trans-default;
+
+  @include hover-focus {
+    color: #ffffff;
+
+    background-color: $color-bg-hover;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+
+  & svg {
+    stroke: currentColor;
+  }
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+}
+
+.slider__pagination {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.slider__bullet {
+  height: 6px;
+
+  background-color: rgba(#000000, 0.1);
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default, background-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-link-hover;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  @include disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+
+  &.is-active {
+    background-color: $color-link-hover;
+  }
+}

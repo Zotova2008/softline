@@ -1,0 +1,20 @@
+// Desktop first
+
+@mixin media-max($max-media) {
+  @media (max-width: ($max-media - 1px)) {
+    @content;
+  }
+}
+
+// Mobile first
+@mixin media-min($min-media) {
+  @media (min-width: $min-media) {
+    @content;
+  }
+}
+
+@mixin media($retina) {
+  @media (min-resolution: $retina) {
+    @content;
+  }
+}

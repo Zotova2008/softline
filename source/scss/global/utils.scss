@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.visually-hidden {
+  @include visibility-a11y;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.scroll-lock-ios {
+  position: fixed;
+
+  overflow: hidden;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.no-transition {
+  /* stylelint-disable-next-line */
+  transition: none !important;
+}

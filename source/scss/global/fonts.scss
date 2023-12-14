@@ -1,0 +1,27 @@
+/* здесь подключите шрифты*/
+// @mixin font($font_name, $file_name, $weight, $style)
+// @mixin fontFolder($font_name, $file__direct, $file_name, $weight, $style)
+
+// Так как в сборке в css настроены пути относительно файлов scss,
+// то в пути нужно прописать "../../img" или "../../fonts"
+
+// Proxima Nova
+@font-face {
+  @include fontFolder("Proxima Nova Condensed", proxima, ProximaNovaCond-Regular, 400, normal);
+}
+
+@font-face {
+  @include fontFolder("Proxima Nova Condensed", proxima, ProximaNovaCond-Semibold, 600, normal);
+}
+
+@font-face {
+  @include fontFolder("Proxima Nova Condensed", proxima, ProximaNovaCond-Bold, 700, normal);
+}
+
+@font-face {
+  @include fontFolder("Proxima", proxima, ProximaNova-Regular, 400, normal);
+}
+
+@font-face {
+  @include fontFolder("Proxima", proxima, ProximaNova-Semibold, 600, normal);
+}

@@ -1,0 +1,68 @@
+{
+// Doctype должен быть объявлен первым.
+		"doctype-first": false,
+		// Недопустимый тип документа.
+		"doctype-html5": true,
+		// атрибут HTML lang является обязательным.
+		"html-lang-require": true,
+		// <script>Тег нельзя использовать в теге.
+		"head-script-disabled": true,
+		// <style>теги использовать нельзя.
+		"style-disabled": true,
+		// <script>теги использовать нельзя.
+		"script-disabled": false,
+		// <title>должен присутствовать в <head>теге.
+		"title-require": true,
+		// Все имена атрибутов должны быть в нижнем регистре
+		"attr-lowercase": ['fooBar'],
+		// Элементы не могут иметь повторяющиеся атрибуты
+		"attr-no-duplication": true,
+		// Без пробелов между именами атрибутов и значениями.
+		"attr-no-unnecessary-whitespace": true,
+		// значения атрибутов не могут содержать небезопасные символы.
+		"attr-unsafe-chars": true,
+		// значения атрибутов должны быть заключены в двойные кавычки
+		"attr-value-double-quotes": true,
+		// значения атрибутов должны быть заключены в одинарные кавычки.
+		"attr-value-single-quotes": false,
+		// Все атрибуты должны иметь значения.
+		"attr-value-not-empty": false,
+		// Атрибуты отсортированы по порядку: class, id, name, src, for, type, href, value, title, alt, role, aria..
+		"attr-sorted": true,
+		// Нет начальных или конечных пробелов в значениях атрибутов.
+		"attr-whitespace": true,
+		// Должен присутствовать атрибут alt элемента, а атрибут alt области [href] и input [type=image] должны иметь значение.
+		"alt-require": true,
+		// Все теги [input] должны иметь соответствующий тег [label]
+		"input-requires-label": true,
+		// Разрешение указывать правила для любого тега и проверять их
+		"tags-check": false,
+		// Тег должен быть парным.
+		"tag-pair": true,
+		// Пустые теги должны быть самозакрытыми.
+		"tag-self-close": false,
+		// Все имена HTML-элементов должны быть в нижнем регистре.
+		"tagname-lowercase": true,
+		// Имена тегов могут содержать только буквы, цифры, «-», «:» или « _ ».
+		"tagname-specialchars": true,
+		// Пустой тег не должен закрываться самостоятельно.
+		"empty-tag-not-self-closed": true,
+		// Атрибут src в img(script,link) должен иметь значение.
+		"src-not-empty": true,
+		// Атрибут href должен быть либо абсолютным, либо относительным.
+		"href-abs-or-rel": false,
+		// Атрибуты id и class не могут использовать ключевое слово объявления, оно будет заблокировано программным обеспечением для блокировки рекламы.
+		"id-class-ad-disabled": true,
+		// значения атрибутов id и class должны соответствовать указанным правилам.
+		"id-class-value": true,
+		// значение атрибутов id должно быть уникальным.
+		"id-unique": true,
+		// нельзя использовать встроенный скрипт.
+		"inline-script-disabled": true,
+		// встроенный стиль использовать нельзя.
+		"inline-style-disabled": true,
+		// не смешивайте табуляции и пробелы для отступов.
+		"space-tab-mixed-disabled": "space",
+		// Специальные символы должны быть экранированы.
+		"spec-char-escape": true
+}

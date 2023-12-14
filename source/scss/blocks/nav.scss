@@ -1,0 +1,20 @@
+.nav__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: end;
+
+  @include media-max($vp-768) {
+    gap: 0 9px;
+    justify-content: start;
+  }
+}
+
+.nav__link {
+  font-weight: 600;
+
+  @include media-max($vp-1024) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

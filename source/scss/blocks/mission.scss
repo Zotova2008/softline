@@ -1,0 +1,41 @@
+.mission {
+  text-align: center;
+}
+
+.mission__container {
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  color: #ffffff;
+
+  background-color: $color-link-hover;
+  background-image: url("../../img/mission-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  @include media-max($vp-768) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.mission__title {
+  margin-bottom: 40px;
+
+  @include media-max($vp-768) {
+    margin-bottom: 10px;
+  }
+}
+
+.mission__text {
+  margin: 0;
+
+  font-size: 32px;
+  line-height: 48px;
+
+  @include media-max($vp-1024) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

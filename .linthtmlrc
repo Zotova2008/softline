@@ -1,0 +1,18 @@
+{
+  "extends": "linthtml-config-htmlacademy",
+  "rules": {
+    "class-style": [
+      "error",
+      "bem"
+    ],
+    "htmlacademy/attr-req-value": [
+      true,
+      {
+        "ignore": [
+          "alt",
+          "/^data-/"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 20px;
+
+  grid-auto-rows: 260px;
+
+  @include media-max($vp-768) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    grid-auto-rows: auto;
+  }
+}
+
+.accordion__element {
+  position: relative;
+
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background-color: #2965ad;
+}
+
+.accordion__container {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  overflow: auto;
+
+  background-color: rgba(#2d3653, 0.6);
+
+  transition: width $trans-default;
+
+  .is-active & {
+    height: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #102554;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a2a2af;
+    border: 1px solid #000000;
+    border-radius: 20px;
+  }
+}
+
+.accordion__button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  padding: 16px 15px;
+
+  font-family: $ff-main;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: left;
+  color: inherit;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include media-max($vp-768) {
+    min-height: 60px;
+    padding: 5px 20px 5px 10px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  & span {
+    max-width: 390px;
+  }
+
+  .is-active & {
+    align-items: start;
+    min-height: auto;
+    padding: 26px 15px 21px;
+
+    @include media-max($vp-768) {
+      align-items: center;
+      min-height: 60px;
+      padding: 5px 20px 5px 10px;
+    }
+  }
+
+  &::after {
+    @include position(50%, auto, -50%, 0);
+
+    content: "";
+    position: absolute;
+    right: 14px;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: currentColor;
+
+    transition: transform $trans-default;
+
+    mask-image: url("../../img/sprite.svg#arrow-down");
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  .is-active &::after {
+    transform: rotate(180deg) translate(0, 50%);
+  }
+}
+
+.accordion__text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 0 15px 15px;
+
+  & p {
+    max-width: 480px;
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 24px;
+
+    @include media-max($vp-768) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.accordion__img {
+  position: absolute;
+
+  inset: 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}

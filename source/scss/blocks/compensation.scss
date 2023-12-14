@@ -1,0 +1,137 @@
+.compensation {
+  text-align: center;
+}
+
+.compensation__container {
+  @include media-max($vp-768) {
+    padding: 0;
+  }
+}
+
+.compensation__content {
+  padding: 28px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
+
+  @include media-max($vp-768) {
+    padding: 0 20px;
+  }
+}
+
+.compensation__package {
+  padding: 52px 0 75px;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
+
+  @include media-max($vp-768) {
+    padding: 24px 0;
+  }
+}
+
+.compensation__title {
+  margin-bottom: 50px;
+
+  @include media-max($vp-768) {
+    margin-bottom: 39px;
+  }
+}
+
+.compensation__list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include media-max($vp-768) {
+    gap: 25px 16px;
+  }
+}
+
+.compensation__item {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 178px;
+
+  @include media-max($vp-768) {
+    width: 120px;
+  }
+
+  & p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    @include media-max($vp-768) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  & span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+
+    background-color: rgba(#000000, 0.05);
+    border-radius: 50%;
+
+    @include media-max($vp-768) {
+      width: 80px;
+      height: 80px;
+    }
+
+    & svg {
+      max-width: 68px;
+      height: 48px;
+
+      @include media-max($vp-768) {
+        max-width: 50px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+.compensation__motivation {
+  padding: 70px 0 55px;
+
+  @include media-max($vp-768) {
+    padding: 25px 0;
+  }
+}
+
+.compensation__motivation-title {
+  margin: 0 0 50px;
+
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+
+  @include media-max($vp-768) {
+    margin-bottom: 25px;
+
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  & span {
+    color: $color-bg;
+
+    @include media-max($vp-768) {
+      display: block;
+      margin-top: 6px;
+    }
+  }
+}
+
+.compensation__motivation .compensation__item {
+  @include media-max($vp-768) {
+    max-width: 92px;
+  }
+}

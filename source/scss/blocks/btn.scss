@@ -1,0 +1,45 @@
+.btn {
+  display: inline-block;
+  padding: 18px 22px;
+
+  font-family: $ff-main;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: $color-default-white;
+
+  background-color: $color-bg;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  transition: background-color $trans-default;
+
+  @include media-max($vp-768) {
+    padding: 7px 26px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @include hover-focus {
+    color: #ffffff;
+
+    background-color: $color-bg-hover;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  @include disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  &--red {
+    background-color: $color-error;
+  }
+}

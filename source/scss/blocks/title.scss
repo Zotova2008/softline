@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 600;
+
+  @include media-max($vp-1024) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
