@@ -5,7 +5,7 @@ export const initMap = function () {
   const mapContainer = document.querySelector('[data-map]');
   const mapBtn = mapContainer.querySelectorAll('[data-btn]');
   const mapBodyText = document.querySelector('[data-map-cities]');
-  const dataCities = '../../../data/data-map.json';
+  const dataCities = './data/data-map.json';
 
   let dataMap;
   let nameCity;
